@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>مركز التعلم الالكتروني جامعة القاهرة </title>
+  
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css">
+<link href="css/lib/animate.min.css" rel="stylesheet"> 
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/lib/responsive.css" rel="stylesheet">
+<link href="css/elc.css" rel="stylesheet" type="text/css">
+<link href="css/loader.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+</style>
+
+
+</head><!--/head-->
+<body ng-app="elcApp">
+<header>
+
+  <div class="main-nav navbar navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a  href="#"><img src="images/logo.jpg" class="logo_img hidden-xs img-responsive"> <img src="images/logo_sm.jpg" class="visible-xs img-responsive logo_sm "> </a>
+    </div>
+    <div class="collapse navbar-collapse " id="topMenu" >
+      <ul class="nav navbar-nav topmenu">
+        <li><a href="#">الرئيسية</a></li>
+        <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">الخدمات <b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                <li role="presentation"><a href="#"  ui-sref="portfolio" role="menuitem">معرض الاعمال</a></li>
+                <li role="presentation"><a href="#" role="menuitem"  ui-sref="elsolution">حلول التعلم الالكتروني</a></li>
+                <li role="presentation"><a href="#" role="menuitem">تطوير مواقع انترنت</a></li>
+                <li role="presentation"><a href="#" role="menuitem">الاستوديو</a></li>
+            </ul>
+        </li>
+         <li class="dropdown" ui-sref-active="active"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button" >هيئة التدريس <b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                <li role="presentation"><a  role="menuitem" ui-sref="smeproduce">انتاج مقرر الكتروني</a></li>
+                <li role="presentation"><a href="#" role="menuitem" ui-sref="smeactivate">تفعيل مقرر الكتروني</a></li>
+                <li role="presentation"><a href="#" role="menuitem" ui-sref="smeworkshop">حضور ورش العمل</a></li>
+              
+            </ul>
+        </li>
+        <li><a href="#" ui-sref="students">الطلاب</a></li>
+         <li><a href="#" ui-sref="news.list" >الاخبار</a></li>
+          
+           <li class="dropdown" ui-sref-active="active"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">عن المركز <b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" ui-sref="mission">الرؤية و الرسالة</a></li>
+                <li role="presentation"><a href="#" role="menuitem" ui-sref="achievments" >الانجازات</a></li>
+                <li role="presentation"><a href="#" role="menuitem">فريق العمل</a></li>
+                <li role="presentation"><a href="#" role="menuitem">فرص العمل</a></li>
+              
+            </ul>
+           <li ui-sref-active="active"><a  ui-sref="contact" >اتصل بنا</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+</header>
+
+<div ng-if="stateIsLoading" >
+<div class="loading"> جاري التحميل </div>
+</div>
+
+  <ui-view>
+      
+    </ui-view>
+
+<footer id="footer" class="site-footer">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+                
+          <div class="col-md-3 hidden-xs">
+			<h4 class="footer-title"> </h4>
+			<div class="footer-body">
+		    <img src="images/logo_trans.png"  class="img-responsive"></div>
+		  </div>
+
+          <div class="col-md-3 col-sm-12">
+			<h4 class="footer-title"> الاتصال بنا : </h4>
+			<div class="footer-body">
+                     <ul class="nolist list-unstyled"> 
+                        <li> <i class="fa fa-map-marker"></i> شارع احمد زويل  
+ مبنى التعليم المفتوح <br>
+
+جامعة القاهرة - الجيزة - مصر </li>
+                        <li> <i class="fa fa-phone"></i> 0168802245 </li>
+                        <li> <i class="fa fa-envelope"></i><a href="mailto:elc.cu.eg@gmail.com"> elc.cu.eg@gmail.com</a> </li>
+                      </ul></div>
+		   	</div>
+            
+           <div class="col-md-3 col-sm-12">
+			<h4 class="footer-title"> هيئة التدريس </h4>
+			<div class="footer-body">
+                     <ul class="list-unstyled">
+                      <li ><a href="#" >انتاج مقرر الكتروني</a></li>
+                <li ><a href="#" >تفعيل مقرر الكتروني</a></li>
+                <li ><a href="#" >حضور ورش العمل</a></li>
+             </ul></div>
+		   	</div>         
+							
+
+        
+         <div class="col-md-3 col-sm-12">
+			<h4 class="footer-title"> خدمات </h4>
+			<div class="footer-body">
+                     <ul class="list-unstyled">
+                      <li ><a href="#" > اخر الاخبار </a></li>
+                <li ><a href="#" >معرض الاعمال </a></li>
+                <li ><a href="#" >حلول التعلم الالكتروني </a></li>
+             </ul></div>
+		   	</div>         
+							
+		</div>
+        
+</div> </div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+				<div class="col-md-12">
+						
+                            &copy;  جميع الحقوق محفوظة  2016  وحدة التعلم الالكتروني , جامعة القاهرة
+					
+						</div>
+					
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+<script type="text/javascript" src="js/lib.min.js"></script>
+
+<script type="text/javascript" src="js/app.min.js"></script>
+
+ 
+
+ 
+
+
+    
+</body>
+</html>

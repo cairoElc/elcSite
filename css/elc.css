@@ -1,0 +1,1180 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size:14px;
+font-family: 'Droid Arabic Naskh' , serif;
+padding-top:100px;
+ }
+
+
+/*************************
+******** Header  CSS*******
+**************************/
+
+.main-nav{
+  
+  background-color:#028fcc;
+  color:#FFF ;
+  height:102px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	margin:0px;
+	padding:0px;		 
+		 }
+	 
+
+.navbar-header{margin-top:0px;
+}
+
+.logo_img{position:absolute ;
+top:0px;}
+
+
+
+#topmenu ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 1em;
+	z-index: 99999;
+}
+
+.topmenu > li {
+padding-top:20px;
+ height:100%;
+ color:#FFF ;
+     box-sizing: border-box;
+
+}
+.topmenu li:hover   {
+	background:#017fb5      ;
+	 color:#FFF ;
+	 border-bottom:#FFF 5px solid;
+}
+.topmenu  li.active {
+	background:#017fb5      ;
+
+}
+
+.navbar-collapse ul { background: #028fcc; }
+
+.navbar-custom {
+	
+    color:#ffffff;
+  	border-radius:0;
+    min-height:auto;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+	font-size:1em;
+	font-weight:bold;
+	cursor:pointer;
+	}
+	
+ .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color:transparent;
+
+}
+      
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .nav .open>a, .navbar-custom .nav .open>a:hover, .navbar-custom .nav .open>a:focus {
+   background-color:transparent;
+}
+
+
+ul.topmenu{
+  margin-right:200px;
+  height:100px;
+
+}
+
+/*-- change navbar dropdown color --*/
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
+    color:#fff;
+	font-weight:bold;
+
+}
+.dropdown-menu>li
+{
+	
+	padding-top:10px;
+	padding-bottom:10px;
+		border-bottom:#017fb5  1px solid ;
+		}
+
+	.dropdown-menu>li:hover 
+{
+	
+		border-bottom:#FFF 2px;}
+			
+.dropdown-menu>li>a:hover{
+	background:#017fb5      ;
+	}
+
+
+
+/*************************
+******** Footer  CSS*******
+**************************/
+
+.site-footer{
+    border-top: 1px solid #2e2e2e;
+    color: #e0e0e0;
+	text-align:right ;  /* waw text align changed from center to right */
+		
+}
+
+.site-footer .footer1{
+background: #191B1F url('../images/left-cross.png');
+	box-shadow: 0px 0px 5px 1px #000;
+	-moz-box-shadow: 0px 0px 5px 1px #000;
+	-webkit-box-shadow: 0px 0px 5px 1px #000;
+	padding-top: 40px;
+	padding-right: 5;
+	padding-bottom: 30px;
+	padding-left: 0;    
+    
+}
+
+.footer-body>ul {
+	 list-style-position: inside;}
+	 
+.footer-body>ul>li {
+	
+	margin-top:15px;
+	list-style:square;
+	font-size:14px;
+			
+	}
+.footer-body a
+{
+	color:#FFF;
+	text-decoration:none;}
+	
+	.footer-body a:hover
+{
+	color:#017fb5;}
+	
+.footer-body>ul.nolist>li
+{
+	list-style:none;}
+	
+.footer-body .fa{
+		color:#31b0d5 ;
+		font-size:1.2em;
+		margin-left:5px;
+	}
+.footer-title{
+	color:#31b0d5 ; }
+	
+/*--  copyright footer --*/	
+.site-footer .footer2{
+    background: #222222;
+    padding: 20px 0;
+	text-align:center ;
+	font-size:12px;
+}
+
+/*************************
+******** class for all page*******
+**************************/
+
+
+img.img-border
+{
+	border:5px outset #CCC;
+	box-shadow: 5px 5px 5px #F3F3F3;
+}
+.page-head{
+		background:#000 ;
+		 position: relative;
+    overflow: hidden;
+			}
+
+.page-head .page-title{
+	color:#fff;
+	text-align:center;
+	padding :50px;
+    position: relative;
+    z-index: 2;
+	
+	}
+	.page-head img{
+	width:100%;
+	 opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+	
+	}
+	
+.right_tit    /* title with right blue border   */
+{
+	margin-bottom:20px;
+	font-weight:bold;
+	border-right: #31b0d5 solid 8px;
+	padding-right:10px;
+	padding-top:8px;
+	height:30px;
+	}	
+	
+.sub-head{ /* applied to sub head just below header image */
+		background:#F4F4F4 ;
+		padding:50px;
+		}		
+		
+.wdg_title{   /* to be applied for any widget title , comes with orange and blue  and may be long */
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:25px;
+	}
+	
+	.long_title
+	{
+		width:100%;
+		border-bottom: #CCC solid 1px;
+		font-weight:bold;
+	margin-bottom:30px;
+	padding-bottom:20px;
+	padding-right:15px;
+		}
+	
+.orange{
+	color:#d54e21;
+		}
+		
+		.blue{
+	color:#31b0d5;
+		}
+
+
+
+.part{   /* used in each part of page */
+	
+		margin-top:50px; }
+	
+.part-dark{  /* special kind of part that is dark
+ */
+	background:#f1f1f1 ;
+	position:relative;}
+
+.pad20{
+	padding:20px;}
+
+.img-center{
+	margin-left:auto;
+	margin-right:auto;
+}
+.listbullet{ margin-left:5px;
+margin-right:5px; }
+
+div.card /* special kind of part that is dark */
+{
+	border:#fff solid 1px;
+	width: 500px;
+	margin-top:50px;
+	margin-bottom:50px;
+	margin:auto ;
+	background:#5bc0de ;
+	color:#fff;
+	
+	padding:15px;
+	-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+		}
+	
+div.card a{
+	
+	color:#000 ;
+	font-weight:bold;} 	
+	
+	address {
+			margin-top:20px;
+		}
+		
+ul.blockList li{
+	list-style-type:none;
+	text-align:center;
+	margin-bottom:50px;}	
+	
+	.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color:#000;
+  padding-top:50px;
+  padding-bottom:50px;
+  color:#FFF;
+  font-size:1.2em;
+  font-weight:bold;
+	
+}
+
+.parallax-slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color:#000;
+ 
+	
+}
+
+	.parallax .fa {
+		font-size:40px;
+		font-weight:bold;}
+
+
+ul li{
+	margin-bottom:10px;}
+	
+	.center-img {     /* div used to put image centered inside it */
+	padding:20px;
+		}
+		
+.center-img img {
+	margin: 0 auto;}
+	
+	
+	div.acontent{
+				 position: relative;
+}
+
+/* unordered list of items */
+ul.list li{
+	padding-right:10px;
+	padding-bottom:15px;
+	text-align:justify;
+	}
+	
+ul.list{
+	margin-top:25px;}
+	
+ul.orglist{
+list-style-image: url('../images/orang_bul.png');
+	}
+ul.bluelist	{
+	list-style-image: url('../images/blu_bul.png');}
+	
+
+
+		
+/*************************
+******** Contact Us page*******
+**************************/
+#map{width:100%;
+height:350px;}
+.form-group {
+	margin-bottom:25px;}
+		
+.input-group , input.form-control, .selectpicker{
+	height:40px;
+	background-color:#fafafa;}
+.control-label {
+	font-weight:normal ;}
+	
+	textarea.form-control{
+		height:200px;
+		background-color:#fafafa;
+		}	
+.form-group .btn
+{
+	float:left;
+	background-color: #d54e21;  
+	text-shadow:none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+	font-size: 16px;
+	color: #FFF;
+	width:200px;
+	font-weight:bold;
+	padding-top:5px;
+	padding-bottom:5px;
+-webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+		
+	}		
+	
+	.form-group .btn:hover
+{	background-color: #e67e22 ; /*#31b0d5; */	}	
+
+.address li
+{margin-bottom:15px;
+
+list-style:none;
+}
+.address li .fa {
+		color: #d54e21; /* the blue color #31b0d5  ; */
+		padding-left:5px ;
+		font-size:24px ;}
+
+.address li span {
+	font-weight:bold;}
+
+
+
+/*************************
+******** sme produce course page*******
+**************************/
+ul.sme-list > li span {
+	vertical-align:middle;
+	padding-top:30px;
+	
+	}
+	
+	ul.sme-list > li
+	{border-bottom: #CCC 1px dotted;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	width:100%;
+text-align:justify;
+	}
+
+ img.leftover {  /* image float from left shoul be in div with position static*/ 
+	float:left;
+	position:absolute;
+	left:0;
+	top:-40px;
+}		
+
+ol.smeol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+ 	padding-left:350px;
+	padding-right:20px;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+
+.rounded-list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: 10em;
+	margin  : 30px;
+    color: #444;
+    text-decoration: none;
+	text-align:justify;
+    transition: all .3s ease-out;   
+}
+
+
+
+
+.rounded-list li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    right: -3em;
+    top: 50%;
+    margin-top: -1.4em;
+    background: #87ceeb;
+    height: 3em;
+    width: 3em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 3em;
+    transition: all .3s ease-out;
+}
+
+/*************************
+******** sme attend workshop *******
+**************************/
+#sme-count
+{
+	
+	 text-align: center;
+
+  background-image: url("../images/workshop.jpg");}
+  
+  #goals
+{font-size:14px;
+
+  background-image: url("../images/goals_bg2.jpg");}
+  
+ /*************************
+******** Achievments page , using bootstrap affix   *******
+**************************/ 
+  
+  .affix {
+  top: 100px;
+  width: 200px;
+}
+  .affix-bottom {
+  position: absolute;
+  width: 200px;
+}
+
+#side-nav .active {
+  font-weight: bold;
+  background: #72bcd4;
+}
+
+#side-nav{
+	border :#F4F4F4 solid 1px;
+	border-radius: 10px;
+	padding-top:5px;
+	
+	
+}
+
+.achtop{   /* to display bar in achievments page */
+	background-image: url(../images/agreements_bg.png);
+	background-repeat: repeat-x;
+	 background-position: 0px 70px;
+	}
+	
+	.achno{/* to display bar in achievments page */
+	margin-left:50% ;
+	margin-right:auto;
+		
+		}
+
+.achbottom{
+	background-color:#e6e6e6;}
+	
+/* conferences crausel */	
+
+
+#elcSlider{
+	background-image:url(../images/conf_bg.jpg);}
+	
+#elcSlider > div {
+  text-align: center;
+  position: relative;
+ }
+ 	
+#elc-carousel {
+  position: relative;
+  z-index: 15 ;
+  height:250px;
+  
+}
+
+#elc-carousel .item {
+	padding-top:50px;
+
+  margin-bottom:50px;
+  color:#FFF ;
+  font-size:1.2em;
+}
+	
+
+.carousel-left-control, 
+.carousel-right-control {
+ position: absolute;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border:1px solid #fff;  
+  z-index: 20;
+  font-size: 24px;
+  font-weight:bold;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#028fcc;
+}
+
+
+.carousel-left-control {
+  left: 80px;
+} 
+
+.carousel-right-control {
+  right: 80px
+}
+
+.carousel-left-control:hover, .carousel-right-control:hover {
+  color: #fff;
+}
+
+.carousel-inner h4{
+	margin-bottom:50px;
+
+	font-weight:bold;
+	color:#6fc8ee;}	
+	
+.carousel-inner h5{
+	margin-bottom:20px;
+	font-weight:bold;
+	color:#999;}
+
+/* achievments project section  */
+
+.service-icon {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  margin-bottom:20px;
+  background:#028fcc;
+}
+
+
+	
+	.project
+	{
+  text-align:center ;
+  border-left:1px solid #f2f2f2;
+  border-bottom:1px solid #f2f2f2;
+  padding-top:30px;
+  padding-bottom: 50px;
+}
+  
+ .col-sm-4.project
+	{	
+  height:250px;}
+  
+
+ .col-sm-6.project
+	{	
+  height:300px}
+  
+  
+ .col-sm-12.project
+	{	
+border-bottom:0;}
+  
+  /* achievments university services section  */ 
+#univ_services{
+	background-image: url(../images/serv_bg.png);
+	background-repeat: repeat-y;
+	background-position: right ;
+	margin-top:40px;
+	 }
+	 
+	 #univ_services p{
+		 padding-right:30px;
+		 }
+	 
+#univ_services img.img1{
+	margin-top:-25px;}	
+		 
+#univ_services img.imgtitle{
+	margin-right:-8px;}	 
+
+ul.serv_bul {list-style-image: url('../images/sev_org_bul.png');
+margin-right:-10px;}	
+
+
+#portfolio .container, 
+#portfolio .col-sm-3  {
+  overflow: hidden;
+  padding: 0;
+}
+
+#portfolio .folio-item {
+  position: relative;
+
+}
+
+#portfolio .overlay {
+  background-color: #000;
+  color: #fff; 
+  left: 0;
+  right:0;
+  bottom:-100%;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  opacity:0;  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay .overlay-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .overlay-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.overlay .folio-info {
+  opacity: 0;
+  margin-bottom: 75px;
+  margin-top: -75px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h3 {
+  margin-top: 0;
+  color:#FFC;
+  font-size: 1.2em;
+}
+
+.folio-overview a {
+  font-size: 1.2em;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.folio-overview a:hover {
+  color: #fff;
+}
+
+.folio-overview .folio-expand {
+  margin-top: -500px;
+  margin-left: -500px;
+}
+
+
+
+.folio-image img {
+  width: 100%;
+
+  
+  
+}
+
+#portfolio .folio-item:hover .overlay {
+  opacity: 0.8;
+  bottom: 0;
+  height: 100%;
+}
+
+#portfolio .folio-item:hover .folio-overview .folio-expand {
+  margin-top: 0;
+  margin-left:0;
+}
+
+#portfolio .folio-item:hover .overlay .folio-info {
+  opacity: 1;  
+  margin-bottom:0;
+  margin-top:0;
+  padding:10px
+}
+
+.folio-image, .folio-overview .folio-expand {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#portfolio .folio-item:hover .folio-image {
+  -webkit-transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.5) rotate(-15deg);
+}
+
+
+#single-portfolio {
+  padding: 90px 0;
+  background: #f5f5f5;
+  position: relative;
+}
+
+#single-portfolio img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#single-portfolio .close-folio-item {
+  position: absolute;
+  top: 30px;
+  font-size: 34px;
+  width: 34px;
+  height: 34px;
+  left: 50%;
+  color: #999;
+  margin-left: -17px;
+}
+
+/********News page CSS*******/
+ 
+	
+.article_thumb{
+	margin-right:10px;
+	margin-left:10px;
+margin-bottom:30px;
+padding-bottom:20px;
+border-bottom: #EBEBEB solid 1px
+}
+
+.article_thumb .ar_title a:hover
+{
+	color:#333 ;
+	text-decoration:none
+		
+	}
+	.ar_time{
+		color:#666;
+		font-size:1em;
+		font-weight:bold;}
+
+.ar_img{
+	margin-bottom:20px;
+	}
+
+.article_thumb .btn{
+	
+	margin:10px;}
+#news  form{
+	margin-top:10px;}
+	
+#news form .btn{
+	height:40px;
+	margin-top:2px;}
+		
+#news input {
+	padding:5px;
+	height:40px;
+	background-color:#fafafa;
+	border:#EBEBEB 1px solid;
+	border-radius: 5px;
+		
+}	
+
+.sidebox{
+	padding:15px;
+	border:#EBEBEB solid 1px;
+	color:#333 ;
+	border-radius: 8px;
+	 }
+.sidebar{
+	padding:15px;
+	border:#EBEBEB solid 1px;
+	color:#333 ;
+	border-radius: 5px;
+	background-color:#F3F3F3 ;
+	}	
+	
+.article_sm {
+;
+margin-bottom:10px;
+padding-bottom:10px;
+border-bottom: #CCC dotted 1px }
+
+.article_sm a:hover
+{
+color:#d9534f;
+	text-decoration:none;
+
+
+	}
+.article_sm a {
+		font-weight:bold;
+
+	}	
+	
+	
+	.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+/*********** for search box on side bar *********************/
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon button  
+{
+	border:0px;
+	background:transparent;
+	width:20px;
+	height:100%;
+	text-align:center	}
+	
+
+.icon-addon button:hover{
+	color:#d9534f}  	
+	
+	/**** article details ***/
+	.article
+	{
+		width:90%}
+.article img {
+	
+	width:100%;
+	margin-bottom:20px;}	
+
+/*************************
+******** Bootstrap screens css *******
+**************************/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops md */
+@media only screen and (max-width : 992px) {
+
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+body{
+padding-top:0px;
+ }
+
+		
+/* header */	  
+	.main-nav{
+    height:inherit;
+		 }
+	 
+
+.navbar-header{
+	margin-bottom:0px;
+	padding-top:5px;
+}
+
+.logo_sm{position:absolute ;
+top:0px;
+height:50px;
+max-width:100px;}
+
+ul.topmenu{
+margin-right:inherit;
+height:auto;
+}
+
+.topmenu li:hover  {
+	
+	 background:transparent;
+	 border-bottom:#0488c2 1px solid;
+	
+}
+
+.topmenu>li  {
+padding-top:0px;
+padding-bottom:0px;
+margin:0px;
+border-bottom:#0488c2 1px solid;
+}
+.navbar-custom .navbar-nav > li > a {
+
+  
+    padding-top:15px;
+    padding-bottom:15px;
+	
+	}
+.dropdown-menu>li
+{
+	
+	padding-top:2px;
+	padding-bottom:2px;
+border-bottom:#2dbaf8  1px dotted ;
+background:#0da4e6;
+		}
+
+.dropdown-menu>li:hover , .topmenu>li.dropdown.open
+{	
+background:#0da4e6;}
+
+	.topmenu>li.dropdown.open>a , .dropdown-menu>li.active>a , .topmenu>li.active>a  {
+		color:#0f516e;}	
+			
+.dropdown-menu>li>a:hover{
+	background:#017fb5      ;
+
+	}
+
+/* footer */
+.footer1{
+	padding-right:10%;
+	padding-left:10%;
+
+}
+.footer-title{
+	text-align:center;
+}
+.footer-body{
+	border-bottom:1px #333 dotted ;
+	margin-bottom:15px;}
+	
+.footer1 div:last-of-type>.footer-body { 
+    border-bottom:none;
+ }	
+	
+ /* internal pages styles*/
+ .page-head img{
+	 height:100px;
+	}
+
+ .page-head{
+	 margin-top:-50px;
+	 width:100%;
+}
+
+.page-head .page-title{
+	padding :10px;
+	font-size:1.5em;
+  
+		}
+		
+div.card /* special kind of part that is dark */
+{
+	
+	width: 300px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+	
+	padding:15px;
+			}
+ /* sme page */			
+ol.smeol {
+  	padding-left:0px;
+	padding-right:15px;
+}
+
+.rounded-list li{
+  	margin-left  : 0px;
+  }
+  
+.achtop{   /* to hide bar in achievments page */
+	background-image:none;
+	} 
+
+/* style applied for all divs that want border botton in small view */
+.border-bottom-xs{	
+border-bottom:1px #333 dotted ;
+margin-bottom:15px;
+padding-bottom:10px;
+}	
+
+/* style applied for images that are displayed in top of title in small view */
+.img-title {
+	margin-bottom:15px;
+	width:200px;
+  margin-left: auto;
+    margin-right: auto;
+	
+}
+
+
+
+/* conferences crausel */	
+
+ 	
+#elc-carousel {
+   height:300px;
+ }
+
+#elc-carousel .item {
+  font-size:1em;
+}
+	
+.carousel-left-control {
+  left: 20px;
+} 
+
+.carousel-right-control {
+  right: 20px
+}
+
+.carousel-left-control, 
+.carousel-right-control {
+   margin-top: -8px;
+
+}
+
+/* acievments page*/
+
+.col-sm-4.project
+	{	
+  height:200px;}
+ 
+
+
+				
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

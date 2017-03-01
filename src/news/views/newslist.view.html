@@ -1,0 +1,13 @@
+
+
+<div class="article_thumb" ng-repeat = "item in parentNews.newsList | filter:search |orderBy:'-created_time'  " >
+ <div class="ar_title"> <h4 class="right_tit"><a href="#"> 
+
+{{item.title}} </a> </h4> 
+ <p class= "ar_time" > <i class="fa fa-clock-o" aria-hidden="true"></i> {{item.created_time| date }} </p></div>
+ <div class="row" >
+  <div class="col-lg-5 col-xs-12 ar_img"> <img class="img-responsive img-thumbnail" src="{{$ctrl.imagePath+item.image}}"></div>
+ <div class="col-lg-7 col-xs-12 ar_desc text-justify"> {{item.small_desc}}     </div>
+ <button class="btn btn-warning btn-sm"> قراءة المزيد..</button> 
+   </div>
+ </div>

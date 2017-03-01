@@ -1,0 +1,76 @@
+<section id="news">
+<div class="page-head"  > 
+  <h1 class="page-title" > اخر الاخبار  </h1>
+ <img src="images/sme.jpg"  class="img-responsive" alt="اخر الاخبار">
+ </div> <!--/header of the page should be found in any page -->
+ 
+      <div class="row part"> </div>
+
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-8 col-xs-12">
+
+<ui-view> </ui-view>
+
+ </div>
+ 
+  <div class="col-lg-4 col-xs-12">
+ 
+  
+<form> 
+  <div class="form-group">
+                <div class="icon-addon addon-lg">
+                    <input type="text" placeholder="ابحث" class="form-control" id="search" ng-model = "search">
+                    <button for="search" class="glyphicon glyphicon-search" rel="tooltip" title="ابحث" onClick="alert('hi')"></button>
+                </div>
+            </div>
+
+</form>
+   <div class="row part"></div>
+  <div class="btn btn-danger btn-lg" > اهم الاخبار </div> 
+  
+  <div class="sidebar">
+  
+   <div class="row article_sm" ng-repeat = "item in parentNews.newsList | filter:{ top: '1' }">
+
+
+  <div class="col-lg-5 ar_img"> <img class="img-responsive img-thumbnail" src="{{parentNews.imagePath+item.image}}"></div>
+ <div class="col-lg-7  ar_desc text-justify"> <div class="ar_title"> <a href="#" ui-sref = "news.article({articleId:item.id})"> {{item.title}}</a> </div><br>
+
+ <div class= "ar_time" > <i class="fa fa-clock-o" aria-hidden="true"></i> {{item.updated_time | date}} </div>   </div>
+
+   
+ </div>
+ 
+   
+   
+ 
+ 
+ 
+   </div>
+ 
+       <div class="row part"></div>
+  
+   
+  <div class="right_tit" > الاشتراك في نشرة الاعلانات </div>
+  <div class="sidebox" >
+  قم بتسجيل البريد الالكتروني الخاص بك و سيتم ارسال اخر الاخبار اليكم 
+  <form> <input name="" type="email" placeholder = "البريد الالكتروني" > <button class="btn btn-info"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </button> </form>
+  </div>
+   
+   
+     <div class="row part">  <img src="images/sme.jpg"  class="img-responsive img-rounded"></div></div>
+  
+ </div>
+ 
+ </div>
+ 
+ </div>
+         
+    
+     
+    
+    
+ 
+       
+  </section>
